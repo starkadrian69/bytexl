@@ -1,0 +1,95 @@
+{
+  "validation_suite": "CivicTrace Phase 3A Final Refinement Validator",
+  "status": "PASSED",
+  "dataset_path": "d:/CIVICTRACE\\data/lucknow/assets/asset_ownership.csv",
+  "metrics": {
+    "total_assets": 39,
+    "assets_by_type": {
+      "ROAD": 11,
+      "DRAIN": 7,
+      "WATER_PIPELINE": 6,
+      "SEWER": 5,
+      "STREETLIGHT": 5,
+      "ELECTRICAL_INFRASTRUCTURE": 5
+    },
+    "assets_by_authority": {
+      "AUTH-UPPWD": 3,
+      "AUTH-LMC": 19,
+      "AUTH-LDA": 1,
+      "AUTH-LKO-JALSANSTHAN": 9,
+      "AUTH-UPJN-URBAN": 2,
+      "AUTH-MVVNL": 5
+    },
+    "assets_by_zone": {
+      "ZONE-01": 9,
+      "ZONE-02": 5,
+      "ZONE-03": 7,
+      "ZONE-04": 3,
+      "ZONE-05": 2,
+      "ZONE-06": 6,
+      "ZONE-07": 5,
+      "ZONE-08": 2
+    },
+    "geometry_type_distribution": {
+      "APPROXIMATE_POINT": 34,
+      "POINT": 5
+    },
+    "location_basis_distribution": {
+      "MAP_DERIVED": 31,
+      "MANUALLY_ESTIMATED": 8
+    },
+    "source_reference_coverage": {
+      "granular_reference_available": 39,
+      "not_available": 0,
+      "pct_granular_reference": 100.0
+    },
+    "responsibility_type_breakdown": {
+      "MAINTENANCE": 29,
+      "OPERATION": 5,
+      "SERVICE_RESPONSIBILITY": 2,
+      "OWNERSHIP": 3
+    },
+    "responsibility_status_breakdown": {
+      "VERIFIED": 20,
+      "INFERRED": 19
+    },
+    "location_status_breakdown": {
+      "APPROXIMATE": 39
+    },
+    "ownership_status_breakdown": {
+      "UNKNOWN": 3,
+      "INFERRED": 29,
+      "VERIFIED": 7
+    },
+    "verification_status_breakdown": {
+      "verified": 0,
+      "partially_verified": 38,
+      "needs_review": 1
+    },
+    "provenance_coverage": {
+      "assets_with_valid_source_pct": 100.0,
+      "distinct_sources_referenced": 8
+    },
+    "spatial_coverage": {
+      "coordinate_sanity_check_passed_pct": 100.0,
+      "ward_pip_matches": 36,
+      "ward_pip_missing_geometry_wards": 1,
+      "ward_pip_mismatches": 2,
+      "zone_pip_matches": 37,
+      "zone_pip_mismatches": 2
+    },
+    "coordinate_integrity": {
+      "exact_duplicate_coords_count": 0,
+      "near_duplicate_coords_count": 0
+    },
+    "error_count": 0,
+    "warning_count": 4
+  },
+  "errors": [],
+  "warnings": [
+    "Asset AST-ROAD-006 point (26.84850, 80.97820) outside legacy polygon of WARD-037. (DataMeet pre-2022 open baseline limitation)",
+    "Asset AST-ROAD-006 point (26.84850, 80.97820) outside derived polygon of ZONE-04.",
+    "Asset AST-DRN-004 point (26.85100, 80.98500) outside legacy polygon of WARD-037. (DataMeet pre-2022 open baseline limitation)",
+    "Asset AST-DRN-004 point (26.85100, 80.98500) outside derived polygon of ZONE-04."
+  ]
+}

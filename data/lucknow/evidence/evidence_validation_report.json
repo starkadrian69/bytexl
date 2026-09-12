@@ -1,0 +1,67 @@
+{
+  "validation_suite": "CivicTrace Phase 3C Evidence Validator",
+  "status": "PASSED",
+  "dataset_path": "d:/CIVICTRACE\\data/lucknow/evidence/evidence.csv",
+  "metrics": {
+    "total_evidence_records": 13,
+    "total_incidents_represented": 8,
+    "evidence_chain_count": 8,
+    "complete_before_after_chain_count": 4,
+    "incomplete_chain_count": 4,
+    "contradictory_chain_count": 1,
+    "unsupported_full_resolution_claims": 0,
+    "provenance_completeness": 1.0,
+    "resolution_support_completeness": 1.0,
+    "evidence_type_distribution": {
+      "DOCUMENTARY_EVIDENCE": 2,
+      "AFTER_PHOTO": 1,
+      "CITIZEN_PHOTO": 7,
+      "FIELD_INSPECTION": 2,
+      "AUTHORITY_UPDATE": 1
+    },
+    "evidence_stage_distribution": {
+      "BEFORE": 8,
+      "AFTER": 5
+    },
+    "evidence_scope_distribution": {
+      "CONDITION": 5,
+      "RESOLUTION": 4,
+      "INCIDENT": 2,
+      "LOCATION": 1,
+      "AUTHORITY_UPDATE": 1
+    },
+    "source_type_distribution": {
+      "REAL_DOCUMENTED": 2,
+      "SYNTHETIC_EVALUATION": 11
+    },
+    "resolution_label_distribution": {
+      "FULLY_RESOLVED": 4,
+      "PARTIALLY_RESOLVED": 2,
+      "INSUFFICIENT_EVIDENCE": 3,
+      "NOT_RESOLVED": 4
+    },
+    "evidence_quality_distribution": {
+      "HIGH": 8,
+      "MEDIUM": 3,
+      "LOW": 1,
+      "UNUSABLE": 1
+    },
+    "location_status_distribution": {
+      "APPROXIMATE": 10,
+      "UNKNOWN": 1,
+      "CONFLICT": 1,
+      "NOT_APPLICABLE": 1
+    }
+  },
+  "intentional_test_warnings": [
+    "Evidence CT-EVD-007 (Incident CT-INC-010): Intentional context-supported spatial conflict. Coordinates reflect camera EXIF discordance with intake narrative (Difficult Case D).",
+    "Evidence CT-EVD-011 (Incident CT-INC-016): Intentional poor-quality evidence test case. Image unusable due to extreme darkness/blur.",
+    "Chain CHAIN-003 (Incident CT-INC-003): Incomplete before/after chain (Stages present: {'BEFORE'}). Intentional edge scenario.",
+    "Chain CHAIN-004 (Incident CT-INC-019): Incomplete before/after chain (Stages present: {'BEFORE'}). Intentional edge scenario.",
+    "Chain CHAIN-005 (Incident CT-INC-010): Incomplete before/after chain (Stages present: {'BEFORE'}). Intentional edge scenario.",
+    "Chain CHAIN-006 (Incident CT-INC-014): CONTRADICTORY_RESOLUTION_EVIDENCE detected. Authority update claims closure but subsequent citizen evidence indicates issue persists. Ground truth curated as NOT_RESOLVED.",
+    "Chain CHAIN-007 (Incident CT-INC-016): Incomplete before/after chain (Stages present: {'BEFORE'}). Intentional edge scenario."
+  ],
+  "warnings": [],
+  "errors": []
+}

@@ -1,0 +1,313 @@
+{
+  "geographic_context": {
+    "state": "Uttar Pradesh",
+    "city": "Lucknow",
+    "current_jurisdiction_reference": {
+      "zones_count": 8,
+      "wards_count": 110,
+      "jurisdiction_version": "2023-DELIM-01",
+      "effective_from": "2022-10-31",
+      "effective_to": null,
+      "source_id": "SRC-004",
+      "verification_status": "VERIFIED",
+      "notes": "Current reference data reflects 8 zones and 110 wards per UP Gazette 31-Oct-2022. Not an immutable architectural constant; future delimitations will update jurisdiction_version."
+    }
+  },
+  "authorities": [
+    {
+      "authority_id": "AUTH-LMC",
+      "authority_name": "Lucknow Municipal Corporation",
+      "authority_type": "MUNICIPAL_CORPORATION",
+      "parent_authority_id": "AUTH-GOUP-UDD",
+      "parent_authority_name": "Department of Urban Development, Government of Uttar Pradesh",
+      "official_portal": "https://lmc.up.nic.in",
+      "grievance_portal": "https://lucknow.everythingcivic.com/citizen/createissue",
+      "toll_free_helpline": "1533",
+      "departments": [
+        {
+          "department_id": "DEPT-LMC-ADMIN",
+          "department_name": "Central Municipal Administration",
+          "department_type": "OTHER",
+          "services": [
+            {
+              "service_id": "SRV-LMC-GENERAL",
+              "service_name": "General Civic Inquiries & Service Coordination",
+              "issue_categories": [
+                "GENERAL_CIVIC"
+              ]
+            }
+          ]
+        },
+        {
+          "department_id": "DEPT-LMC-CIVIL",
+          "department_name": "Civil Engineering Department",
+          "department_type": "ROADS",
+          "services": [
+            {
+              "service_id": "SRV-LMC-POTHOLE",
+              "service_name": "Municipal Road Pothole Filling & Patchwork",
+              "issue_categories": [
+                "POTHOLE"
+              ]
+            },
+            {
+              "service_id": "SRV-LMC-ROAD-REPAIR",
+              "service_name": "Municipal Road Surface Reconstruction & Damage Repair",
+              "issue_categories": [
+                "ROAD_DAMAGE",
+                "ROAD_COLLAPSE"
+              ]
+            },
+            {
+              "service_id": "SRV-LMC-FOOTPATH",
+              "service_name": "Municipal Footpath & Pedestrian Walkway Maintenance",
+              "issue_categories": [
+                "DAMAGED_FOOTPATH"
+              ]
+            },
+            {
+              "service_id": "SRV-LMC-DRAIN-CLEANING",
+              "service_name": "Stormwater Drain Desilting & Unblocking",
+              "issue_categories": [
+                "BLOCKED_DRAIN"
+              ]
+            },
+            {
+              "service_id": "SRV-LMC-WATERLOGGING-PUMPING",
+              "service_name": "Waterlogging Mitigation & Emergency Dewatering",
+              "issue_categories": [
+                "WATERLOGGING"
+              ]
+            }
+          ]
+        },
+        {
+          "department_id": "DEPT-LMC-SWM",
+          "department_name": "Health & Sanitation Department",
+          "department_type": "SANITATION",
+          "services": [
+            {
+              "service_id": "SRV-LMC-GARBAGE-COLLECTION",
+              "service_name": "Municipal Solid Waste Collection & Street Sweeping",
+              "issue_categories": [
+                "GARBAGE_ACCUMULATION"
+              ]
+            },
+            {
+              "service_id": "SRV-LMC-ILLEGAL-DUMPING",
+              "service_name": "Illegal Garbage Dumping Removal & Enforcement",
+              "issue_categories": [
+                "ILLEGAL_DUMPING"
+              ]
+            },
+            {
+              "service_id": "SRV-LMC-BIN-CLEARANCE",
+              "service_name": "Community Garbage Bin & Compactor Clearance",
+              "issue_categories": [
+                "OVERFLOWING_BIN"
+              ]
+            }
+          ]
+        },
+        {
+          "department_id": "DEPT-LMC-ELEC",
+          "department_name": "Electrical & Mechanical Department",
+          "department_type": "ELECTRICAL",
+          "services": [
+            {
+              "service_id": "SRV-LMC-STREETLIGHT-REPAIR",
+              "service_name": "Streetlight Luminaire & Fixture Repair",
+              "issue_categories": [
+                "STREETLIGHT_FAILURE"
+              ]
+            },
+            {
+              "service_id": "SRV-LMC-STREETLIGHT-HARDWARE",
+              "service_name": "Streetlight Bracket, Fitting & Hardware Maintenance",
+              "issue_categories": [
+                "STREETLIGHT_DAMAGE"
+              ]
+            }
+          ]
+        },
+        {
+          "department_id": "DEPT-LMC-VET",
+          "department_name": "Animal Welfare Department",
+          "department_type": "OTHER",
+          "services": [
+            {
+              "service_id": "SRV-LMC-ANIMAL-CONTROL",
+              "service_name": "Stray Cattle Impounding & Animal Carcass Removal",
+              "issue_categories": [
+                "ANIMAL_NUISANCE"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "authority_id": "AUTH-LKO-JALSANSTHAN",
+      "authority_name": "Lucknow Jal Sansthan",
+      "authority_type": "PUBLIC_UTILITY",
+      "parent_authority_id": "AUTH-GOUP-UDD",
+      "parent_authority_name": "Department of Urban Development, Government of Uttar Pradesh",
+      "official_portal": "https://lmc.up.nic.in/procedure.aspx",
+      "grievance_portal": "https://jansunwai.up.nic.in",
+      "toll_free_helpline": "1533 / 0522-2622617",
+      "departments": [
+        {
+          "department_id": "DEPT-JS-WATER",
+          "department_name": "Water Distribution & Maintenance Wing",
+          "department_type": "WATER",
+          "services": [
+            {
+              "service_id": "SRV-JS-LEAK-REPAIR",
+              "service_name": "Potable Water Distribution Pipeline Leakage Repair",
+              "issue_categories": [
+                "WATER_LEAKAGE"
+              ]
+            },
+            {
+              "service_id": "SRV-JS-BURST-PIPE",
+              "service_name": "Drinking Water Main / Service Pipe Burst Repair",
+              "issue_categories": [
+                "BROKEN_PIPELINE"
+              ]
+            }
+          ]
+        },
+        {
+          "department_id": "DEPT-JS-SEWER",
+          "department_name": "Sewerage Operations & Maintenance Wing",
+          "department_type": "SEWER",
+          "services": [
+            {
+              "service_id": "SRV-JS-SEWER-CLEARANCE",
+              "service_name": "Sewer Line Clearance & Manhole Overflow Redressal",
+              "issue_categories": [
+                "SEWER_OVERFLOW",
+                "SEWER_BLOCKAGE"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "authority_id": "AUTH-UPPWD",
+      "authority_name": "Public Works Department, Uttar Pradesh",
+      "authority_type": "STATE_DEPARTMENT",
+      "parent_authority_id": "AUTH-GOUP",
+      "parent_authority_name": "Government of Uttar Pradesh",
+      "official_portal": "https://uppwd.gov.in",
+      "grievance_portal": "https://jansunwai.up.nic.in",
+      "toll_free_helpline": "1076 (CM Helpline)",
+      "departments": [
+        {
+          "department_id": "DEPT-PWD-LKO-CIRCLE",
+          "department_name": "Lucknow Circle (Provincial Division)",
+          "department_type": "ROADS",
+          "services": [
+            {
+              "service_id": "SRV-PWD-ROAD-REPAIR",
+              "service_name": "State Highway & Major District Road Maintenance",
+              "issue_categories": [
+                "ROAD_DAMAGE",
+                "POTHOLE"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "authority_id": "AUTH-MVVNL",
+      "authority_name": "Madhyanchal Vidyut Vitran Nigam Limited",
+      "authority_type": "PUBLIC_UTILITY",
+      "parent_authority_id": "AUTH-UPPCL",
+      "parent_authority_name": "Uttar Pradesh Power Corporation Limited",
+      "official_portal": "https://www.mvvnl.in",
+      "grievance_portal": "https://1912.uppcl.org",
+      "toll_free_helpline": "1912",
+      "departments": [
+        {
+          "department_id": "DEPT-MVVNL-LESA",
+          "department_name": "Lucknow Electricity Supply Administration (LESA)",
+          "department_type": "ELECTRICAL",
+          "services": [
+            {
+              "service_id": "SRV-MVVNL-POWER-SUPPLY",
+              "service_name": "Electricity Distribution & Streetlight Power Circuit Maintenance",
+              "issue_categories": [
+                "POWER_OUTAGE"
+              ]
+            },
+            {
+              "service_id": "SRV-MVVNL-LINE-MAINTENANCE",
+              "service_name": "Overhead Distribution Line & Electrical Pole Maintenance",
+              "issue_categories": [
+                "ELECTRICAL_INFRASTRUCTURE"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "authority_id": "AUTH-UPJN-URBAN",
+      "authority_name": "Uttar Pradesh Jal Nigam (Urban)",
+      "authority_type": "PUBLIC_UTILITY",
+      "parent_authority_id": "AUTH-GOUP-UDD",
+      "parent_authority_name": "Department of Urban Development, Government of Uttar Pradesh",
+      "official_portal": "http://jn.upsdc.gov.in",
+      "grievance_portal": "https://jansunwai.up.nic.in",
+      "toll_free_helpline": "0522-2626395",
+      "departments": [
+        {
+          "department_id": "DEPT-UPJN-CONSTR",
+          "department_name": "Capital Projects & Construction Wing",
+          "department_type": "WATER",
+          "services": [
+            {
+              "service_id": "SRV-UPJN-CAPITAL-WORKS",
+              "service_name": "Major Trunk Sewer & Water Augmentation Scheme Construction",
+              "issue_categories": [
+                "SEWER_INFRASTRUCTURE",
+                "WATER_INFRASTRUCTURE"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "authority_id": "AUTH-LDA",
+      "authority_name": "Lucknow Development Authority",
+      "authority_type": "DEVELOPMENT_AUTHORITY",
+      "parent_authority_id": "AUTH-GOUP-HUPD",
+      "parent_authority_name": "Housing and Urban Planning Department, Government of Uttar Pradesh",
+      "official_portal": "https://ldaonline.co.in",
+      "grievance_portal": "https://jansunwai.up.nic.in",
+      "toll_free_helpline": "0522-2307868",
+      "departments": [
+        {
+          "department_id": "DEPT-LDA-ENG",
+          "department_name": "Engineering Division",
+          "department_type": "ROADS",
+          "services": [
+            {
+              "service_id": "SRV-LDA-SECTOR-MAINT",
+              "service_name": "Civic Infrastructure Maintenance in Un-transferred Sectors",
+              "issue_categories": [
+                "ROAD_DAMAGE",
+                "DRAINAGE",
+                "STREETLIGHT_FAILURE"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

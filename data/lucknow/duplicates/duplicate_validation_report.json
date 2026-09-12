@@ -1,0 +1,53 @@
+{
+  "validation_suite": "CivicTrace Phase 3D Duplicate Validator",
+  "status": "PASSED",
+  "dataset_path": "d:/CIVICTRACE\\data/lucknow/duplicates/duplicate_cases.csv",
+  "metrics": {
+    "total_duplicate_records": 26,
+    "cluster_count": 7,
+    "duplicate_label_distribution": {
+      "DUPLICATE": 9,
+      "LIKELY_DUPLICATE": 5,
+      "POSSIBLE_DUPLICATE": 5,
+      "UNRELATED": 7
+    },
+    "language_distribution": {
+      "ENGLISH": 14,
+      "HINDI": 5,
+      "HINGLISH": 5,
+      "MIXED": 2
+    },
+    "issue_category_distribution": {
+      "POTHOLE": 5,
+      "BLOCKED_DRAIN": 5,
+      "STREETLIGHT_FAILURE": 4,
+      "WATERLOGGING": 3,
+      "BROKEN_PIPELINE": 3,
+      "GARBAGE_ACCUMULATION": 1,
+      "WATER_LEAKAGE": 1,
+      "ELECTRICAL_INFRASTRUCTURE": 1,
+      "ILLEGAL_DUMPING": 1,
+      "SEWER_OVERFLOW": 1,
+      "ROAD_DAMAGE": 1
+    },
+    "location_status_distribution": {
+      "APPROXIMATE": 25,
+      "UNKNOWN": 1
+    },
+    "evidence_available_distribution": {
+      "YES": 14,
+      "NO": 12
+    },
+    "data_mode_distribution": {
+      "SYNTHETIC_EVALUATION": 26
+    },
+    "source_type_distribution": {
+      "SYNTHETIC_EVALUATION": 26
+    },
+    "provenance_completeness": 1.0,
+    "coordinate_sanity_pass_rate": 1.0
+  },
+  "intentional_test_warnings": [],
+  "warnings": [],
+  "errors": []
+}

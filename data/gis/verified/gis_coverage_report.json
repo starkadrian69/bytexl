@@ -1,0 +1,46 @@
+{
+  "jurisdiction_version": "LKO-JUR-2023-01",
+  "version_type": "CIVICTRACE_INTERNAL",
+  "administrative_coverage": {
+    "total_administrative_wards": 110,
+    "total_administrative_zones": 8,
+    "unique_ward_numbers": 110,
+    "contiguous_ward_numbers": true,
+    "unassigned_wards": 0,
+    "administrative_status_breakdown": {
+      "VERIFIED": 110
+    }
+  },
+  "geometry_coverage": {
+    "total_geometry_features_wards": 105,
+    "official_geometry_count": 0,
+    "secondary_legacy_geometry_count": 105,
+    "derived_geometry_count_zones": 8,
+    "missing_geometry_count": 5,
+    "missing_geometry_ward_ids": [
+      "WARD-001",
+      "WARD-007",
+      "WARD-009",
+      "WARD-012",
+      "WARD-014"
+    ]
+  },
+  "alignment_coverage": {
+    "alignment_verified_count": 58,
+    "alignment_partially_verified_count": 47,
+    "alignment_needs_review_count": 5,
+    "alignment_conflict_count": 0
+  },
+  "provenance_coverage": {
+    "registered_sources_count": 6,
+    "features_with_source_id_pct": 100.0,
+    "features_with_legal_basis_pct": 100.0,
+    "derived_geometries_with_provenance_pct": 100.0
+  },
+  "geometric_integrity": {
+    "crs": "EPSG:4326 (WGS 84)",
+    "bounding_box_compliant": true,
+    "shapely_valid_geometries_pct": 100.0,
+    "invalid_geometries_count": 0
+  }
+}

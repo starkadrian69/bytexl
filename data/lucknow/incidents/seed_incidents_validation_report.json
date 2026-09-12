@@ -1,0 +1,133 @@
+{
+  "validation_suite": "CivicTrace Phase 3B Refined Incident Validator",
+  "status": "PASSED",
+  "dataset_path": "d:/CIVICTRACE\\data/lucknow/incidents/seed_incidents.csv",
+  "metrics": {
+    "total_incidents": 20,
+    "record_type_breakdown": {
+      "REAL_DOCUMENTED": 2,
+      "SYNTHETIC_EVALUATION": 18
+    },
+    "category_breakdown": {
+      "POTHOLE": 3,
+      "ROAD_DAMAGE": 2,
+      "GARBAGE_ACCUMULATION": 1,
+      "ILLEGAL_DUMPING": 1,
+      "OVERFLOWING_BIN": 1,
+      "BLOCKED_DRAIN": 2,
+      "WATERLOGGING": 1,
+      "WATER_LEAKAGE": 2,
+      "BROKEN_PIPELINE": 1,
+      "SEWER_OVERFLOW": 2,
+      "STREETLIGHT_FAILURE": 2,
+      "ELECTRICAL_INFRASTRUCTURE": 2
+    },
+    "language_breakdown": {
+      "ENGLISH": 8,
+      "HINDI": 6,
+      "HINGLISH": 4,
+      "MIXED": 2
+    },
+    "severity_breakdown": {
+      "HIGH": 8,
+      "MEDIUM": 7,
+      "CRITICAL": 4,
+      "LOW": 1
+    },
+    "ward_validation": {
+      "valid": 19,
+      "invalid": 0,
+      "needs_review": 1
+    },
+    "zone_breakdown": {
+      "ZONE-01": 5,
+      "ZONE-03": 4,
+      "ZONE-05": 1,
+      "ZONE-06": 4,
+      "ZONE-07": 2,
+      "ZONE-02": 2,
+      "ZONE-04": 1
+    },
+    "authority_breakdown": {
+      "AUTH-UPPWD": 1,
+      "AUTH-LMC": 10,
+      "NEEDS_REVIEW": 2,
+      "AUTH-LKO-JALSANSTHAN": 5,
+      "AUTH-MVVNL": 2
+    },
+    "responsibility_status_breakdown": {
+      "VERIFIED": 9,
+      "INFERRED": 9,
+      "NEEDS_REVIEW": 2
+    },
+    "asset_linkage": {
+      "linked": 16,
+      "unlinked_but_valid": 3,
+      "review_required": 1,
+      "invalid_reference": 0
+    },
+    "asset_spatial_consistency": {
+      "exact_or_verified": 15,
+      "approximate_consistent": 0,
+      "spatial_review_required": 0,
+      "conflict": 1,
+      "not_evaluated": 4
+    },
+    "difficult_cases_count": 5,
+    "difficult_cases_coverage": [
+      {
+        "incident_id": "CT-INC-003",
+        "case_type": "Difficult Case C",
+        "summary": "Difficult Case C: Incomplete location"
+      },
+      {
+        "incident_id": "CT-INC-004",
+        "case_type": "Difficult Case A",
+        "summary": "Difficult Case A: Multi-issue complaint (ROAD_DAMAGE + WATERLOGGING)"
+      },
+      {
+        "incident_id": "CT-INC-010",
+        "case_type": "Difficult Case D",
+        "summary": "Difficult Case D: Spatial text vs coordinate conflict"
+      },
+      {
+        "incident_id": "CT-INC-019",
+        "case_type": "Difficult Case B",
+        "summary": "Difficult Case B: Streetlight vs Electrical infrastructure distinction (CONF-003)"
+      },
+      {
+        "incident_id": "CT-INC-020",
+        "case_type": "Difficult Case E",
+        "summary": "Difficult Case E: Authority ambiguity in un-transferred/transition development sectors (CONF-004)"
+      }
+    ],
+    "provenance_coverage": {
+      "records_with_valid_source_pct": 100.0,
+      "distinct_sources_referenced": 8
+    },
+    "error_count": 0,
+    "warning_count": 8,
+    "intentional_test_warning_count": 8
+  },
+  "intentional_test_warnings": [
+    "Incident CT-INC-003 has unassigned/uncertain ward 'UNKNOWN' (Intake location incomplete/needs review).",
+    "Incident CT-INC-003: Asset unassigned due to incomplete/uncertain location (ASSET_REVIEW_REQUIRED).",
+    "Incident CT-INC-003: Authority marked 'NEEDS_REVIEW' (Difficult Case C: Incomplete location). Asset-level authority does not overwrite incident-level jurisdictional uncertainty.",
+    "Incident CT-INC-005 (GARBAGE_ACCUMULATION): Diffuse solid waste accumulation without static physical asset model in Phase 3A (UNLINKED_BUT_VALID).",
+    "Incident CT-INC-006 (ILLEGAL_DUMPING): Diffuse solid waste accumulation without static physical asset model in Phase 3A (UNLINKED_BUT_VALID).",
+    "Incident CT-INC-007 (OVERFLOWING_BIN): Diffuse solid waste accumulation without static physical asset model in Phase 3A (UNLINKED_BUT_VALID).",
+    "Incident CT-INC-010 (AST-DRN-003): Intentional spatial conflict test case. Incident GPS is 1338.8m away from asset coordinates (Text cites Kapoorthala Aliganj, GPS in Hazratganj).",
+    "Incident CT-INC-020: Authority marked 'NEEDS_REVIEW' (Difficult Case E: Authority ambiguity in un-transferred/transition development sectors (CONF-004)). Asset-level authority does not overwrite incident-level jurisdictional uncertainty."
+  ],
+  "errors": [],
+  "warnings": [
+    "Incident CT-INC-003 has unassigned/uncertain ward 'UNKNOWN' (Intake location incomplete/needs review).",
+    "Incident CT-INC-003: Asset unassigned due to incomplete/uncertain location (ASSET_REVIEW_REQUIRED).",
+    "Incident CT-INC-003: Authority marked 'NEEDS_REVIEW' (Difficult Case C: Incomplete location). Asset-level authority does not overwrite incident-level jurisdictional uncertainty.",
+    "Incident CT-INC-005 (GARBAGE_ACCUMULATION): Diffuse solid waste accumulation without static physical asset model in Phase 3A (UNLINKED_BUT_VALID).",
+    "Incident CT-INC-006 (ILLEGAL_DUMPING): Diffuse solid waste accumulation without static physical asset model in Phase 3A (UNLINKED_BUT_VALID).",
+    "Incident CT-INC-007 (OVERFLOWING_BIN): Diffuse solid waste accumulation without static physical asset model in Phase 3A (UNLINKED_BUT_VALID).",
+    "Incident CT-INC-010 (AST-DRN-003): Intentional spatial conflict test case. Incident GPS is 1338.8m away from asset coordinates (Text cites Kapoorthala Aliganj, GPS in Hazratganj).",
+    "Incident CT-INC-020: Authority marked 'NEEDS_REVIEW' (Difficult Case E: Authority ambiguity in un-transferred/transition development sectors (CONF-004)). Asset-level authority does not overwrite incident-level jurisdictional uncertainty."
+  ]
+}
