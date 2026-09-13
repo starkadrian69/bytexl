@@ -1,7 +1,7 @@
 {
   "validation_suite": "CivicTrace Phase 3A Final Refinement Validator",
   "status": "PASSED",
-  "dataset_path": "d:/CIVICTRACE\\data/lucknow/assets/asset_ownership.csv",
+  "dataset_path": "data/lucknow/assets/asset_ownership.csv",
   "metrics": {
     "total_assets": 39,
     "assets_by_type": {

@@ -1,7 +1,7 @@
 {
   "validation_suite": "CivicTrace Phase 3D Duplicate Validator",
   "status": "PASSED",
-  "dataset_path": "d:/CIVICTRACE\\data/lucknow/duplicates/duplicate_cases.csv",
+  "dataset_path": "data/lucknow/duplicates/duplicate_cases.csv",
   "metrics": {
     "total_duplicate_records": 26,
     "cluster_count": 7,

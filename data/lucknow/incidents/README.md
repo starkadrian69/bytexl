@@ -101,7 +101,7 @@ Rather than relying on hard-coded ID ranges, Phase 3B ingests `data/gis/jurisdic
 
 ### Decoupled Incident-to-Asset Spatial Consistency
 Phase 3A physical asset coordinates represent approximate reference points derived from open GIS layers and road schedules. Therefore, CivicTrace does not require mathematical coordinate equality between incidents and assets:
-- **`EXACT_OR_VERIFIED`**: Incident coordinate within $\le 10\text{ m}$ of the asset reference point.
+- **`EXACT_OR_VERIFIED`**: Incident coordinate within $\le 10\text{ m}$ of the asset reference point. (Note: `EXACT_OR_VERIFIED` does not mean official government verification or legal confirmation of the incident coordinates. It means that the supplied coordinates are consistent with the available CivicTrace reference data within the configured validation tolerance.)
 - **`APPROXIMATE_CONSISTENT`**: Incident coordinate within reasonable corridor proximity ($\le 500\text{ m}$) within the same ward.
 - **`SPATIAL_REVIEW_REQUIRED`**: Greater spatial separation requiring intake verification.
 - **`CONFLICT`**: Deliberate or identified spatial discrepancies (e.g., text cites Kapoorthala Aliganj in Zone 3 while GPS indicates Hazratganj in Zone 1).

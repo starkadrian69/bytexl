@@ -1,7 +1,7 @@
 {
   "validation_suite": "CivicTrace Phase 3B Refined Incident Validator",
   "status": "PASSED",
-  "dataset_path": "d:/CIVICTRACE\\data/lucknow/incidents/seed_incidents.csv",
+  "dataset_path": "data/lucknow/incidents/seed_incidents.csv",
   "metrics": {
     "total_incidents": 20,
     "record_type_breakdown": {

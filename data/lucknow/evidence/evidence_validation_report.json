@@ -1,7 +1,7 @@
 {
   "validation_suite": "CivicTrace Phase 3C Evidence Validator",
   "status": "PASSED",
-  "dataset_path": "d:/CIVICTRACE\\data/lucknow/evidence/evidence.csv",
+  "dataset_path": "data/lucknow/evidence/evidence.csv",
   "metrics": {
     "total_evidence_records": 13,
     "total_incidents_represented": 8,
