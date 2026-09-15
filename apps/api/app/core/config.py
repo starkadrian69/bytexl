@@ -44,7 +44,7 @@ class Settings(BaseSettings):
     api_v1_prefix: str = "/api/v1"
 
     # Comma-separated in env vars; list in code.
-    allowed_origins: list[str] = Field(
+    allowed_origins: list[str] | str = Field(
         default=[
             "http://localhost:3000",
             "http://127.0.0.1:3000",
@@ -55,11 +55,18 @@ class Settings(BaseSettings):
         ]
     )
 
-    @field_validator("allowed_origins", mode="before")
+    @field_validator("allowed_origins", mode="after")
     @classmethod
     def parse_allowed_origins(cls, v: str | list[str]) -> list[str]:
-        """Accept either a comma-separated string or a list."""
+        """Accept either a comma-separated string, JSON string, or a list."""
         if isinstance(v, str):
+            v = v.strip()
+            if v.startswith("[") and v.endswith("]"):
+                import json
+                try:
+                    return json.loads(v)
+                except Exception:
+                    pass
             return [origin.strip() for origin in v.split(",") if origin.strip()]
         return v
 
