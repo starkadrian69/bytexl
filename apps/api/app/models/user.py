@@ -37,8 +37,8 @@ class User(Base):
     __table_args__ = (
         CheckConstraint(
             """
-            (role IN ('CITIZEN', 'ADMIN') AND authority_id IS NULL)
-            OR (role = 'AUTHORITY' AND authority_id IS NOT NULL)
+            (UPPER(role::text) IN ('CITIZEN', 'ADMIN') AND authority_id IS NULL)
+            OR (UPPER(role::text) IN ('AUTHORITY', 'FIELD_WORKER') AND authority_id IS NOT NULL)
             """,
             name='users_role_authority_check'
         ),
