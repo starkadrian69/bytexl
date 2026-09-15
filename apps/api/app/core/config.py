@@ -7,10 +7,10 @@ by get_settings() to avoid repeated env reads.
 """
 
 from functools import lru_cache
-from typing import Literal
+from typing import Annotated, Literal
 
 from pydantic import AnyUrl, Field, field_validator
-from pydantic_settings import BaseSettings, SettingsConfigDict
+from pydantic_settings import BaseSettings, NoDecode, SettingsConfigDict
 
 
 class Settings(BaseSettings):
@@ -44,7 +44,7 @@ class Settings(BaseSettings):
     api_v1_prefix: str = "/api/v1"
 
     # Comma-separated in env vars; list in code.
-    allowed_origins: list[str] | str = Field(
+    allowed_origins: Annotated[list[str], NoDecode] = Field(
         default=[
             "https://civic-trace-peach.vercel.app",
             "http://localhost:3000",
@@ -56,19 +56,25 @@ class Settings(BaseSettings):
         ]
     )
 
-    @field_validator("allowed_origins", mode="after")
+    @field_validator("allowed_origins", mode="before")
     @classmethod
-    def parse_allowed_origins(cls, v: str | list[str]) -> list[str]:
-        """Accept either a comma-separated string, JSON string, or a list."""
+    def parse_allowed_origins(cls, v):
         if isinstance(v, str):
             v = v.strip()
+
+            # Support JSON-list input if someone supplies it.
             if v.startswith("[") and v.endswith("]"):
                 import json
                 try:
-                    return json.loads(v)
+                    parsed = json.loads(v)
+                    if isinstance(parsed, list):
+                        return [str(origin).strip() for origin in parsed if str(origin).strip()]
                 except Exception:
                     pass
+
+            # Normal Render comma-separated environment variable.
             return [origin.strip() for origin in v.split(",") if origin.strip()]
+
         return v
 
     # ------------------------------------------------------------------
